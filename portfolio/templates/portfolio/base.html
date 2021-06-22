@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'portfolio/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'portfolio/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'portfolio/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'portfolio/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'portfolio/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet", type="text/css" href="{% static 'portfolio/wole.css' %}">
+    <!-- <link rel="stylesheet", type="text/css" href="{% static 'portfolio/corey.css' %}"> -->
+
+    <title>Oluwole Ajewole</title>
+    <meta name="keywords" content="Machine Learning, Data Science, Data Analysis, Writing">
+    <meta name="description" content="Personal Website and Portfolio">
+    <meta name="author" content="Oluwole Ajewole">
+</head>
+
+<body class="page page-template-default content-sidebar" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<div class="site-container">
+    <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+        <div class="wrap">
+            <div class="title-area">
+                <div class="site-avatar">
+                    <a href="https://wolemercy.com/">
+                        <img class="site-avatar-svg" src="{% static 'portfolio/avatar5 resized.svg' %}"/>
+                    </a>
+                </div>
+                <p class="site-title" itemprop="headline"><a href="https://wolemercy.com/">Oluwole Ajewole</a></p>
+
+                <p class="site-description" itemprop="description">Data Scientist | Machine Learning Engineer</p>
+                
+                <div class="social-links-div">
+                    <ul>
+                        <li class="social-links-li">
+                            <a class="social-link social-twitter" href="https://www.kaggle.com/wolemercy/">
+                                <!-- <a href="https://iconscout.com/icons/kaggle" target="_blank">Kaggle Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">Iconscout</a> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                                    <path fill="#35B5E2" d="M7.998,0H5.598C5.365,0,5.25,0.118,5.25,0.352v23.295c0,0.235,0.115,0.352,0.348,0.352h2.401c0.232,0,0.348-0.117,0.348-0.352v-5.11l1.427-1.374l5.115,6.59C15.027,23.918,15.189,24,15.374,24h3.097c0.161,0,0.254-0.047,0.278-0.141l-0.07-0.353l-6.749-8.494l6.471-6.343c0.122-0.124,0.078-0.493-0.244-0.493h-3.202c-0.161,0-0.324,0.083-0.487,0.247l-6.123,6.273V0.352C8.347,0.118,8.231,0,7.998,0L7.998,0z"/>
+                                    <path fill="#2E9EC5" d="M7.998,0H5.598C5.365,0,5.25,0.118,5.25,0.352v23.295c0,0.235,0.115,0.352,0.348,0.352h2.401c0.232,0,0.348-0.117,0.348-0.352v-5.11l1.425-1.372v-3.929l-1.425,1.46V0.352C8.347,0.118,8.231,0,7.998,0L7.998,0z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-li">
+                            <a class="social-link social-linkedin" href="https://www.linkedin.com/in/wolemercy/">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
+                                    <g>
+                                        <circle style="fill:#007AB9;" cx="56.098" cy="56.097" r="56.098"/>
+                                            <g>
+                                                <path style="fill:#F1F2F2;" d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118 c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715 c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662 C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967 c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z M27.865,83.739H41.27V43.409H27.865V83.739z"/>
+                                            </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-li">
+                            <a class="social-link social-github" href="https://github.com/Wolemercy/">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><circle class="outer-shape" cx="50" cy="50" r="48"></circle>
+                                    <path class="inner-shape" style="opacity: 1; fill: rgb(255, 255, 255);" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-li">
+                            <a class="social-link social-twitter" href="https://twitter.com/wolemercy/">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><circle class="outer-shape" cx="50" cy="50" r="48"></circle>
+                                    <path class="inner-shape" style="opacity: 1; fill: rgb(255, 255, 255);" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-li">
+                            <a class="social-link social-twitter" href="https://wolemercy.substack.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#fe6718" d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="widget-area header-widget-area">
+                <section id="nav_menu-2" class="widget widget_nav_menu">
+                    <div class="widget-wrap">
+                        <nav class="nav-header" role="navigation" itemscope="itemscope"
+                             itemtype="http://schema.org/SiteNavigationElement">
+                             <ul id="menu-contact-menu" class="menu genesis-nav-menu js-superfish">
+
+                                <a href="#contact_me" class="btn btn-outline-secondary btn-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-153" role="button">Contact</a>
+                                
+                                <a href="https://drive.google.com/file/d/16tePGX6v0EsK9yg0ni00yyFTzyN2hGFU/view?usp=sharing" class="btn btn-outline-dark btn-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-153" role="button">Resume</a>
+                            </ul>
+                        </nav>
+                    </div>                
+                </section>
+            </aside>
+        </div>
+    </header>
+    <nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <div class="wrap">
+            <ul id="menu-primary-navigation" class="menu genesis-nav-menu menu-primary js-superfish">
+                <li id="menu-item-898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-898"><a title="About" href="#about_me" itemprop="url"><span itemprop="name">About Me</span></a></li>
+                <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a title="Experience" href="#experience" itemprop="url"><span itemprop="name">Experience</span></a></li>
+                <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a title="Projects" href="#projects" itemprop="url"><span itemprop="name">Projects</span></a></li>
+                <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a title="Skills" href="#skills" itemprop="url"><span itemprop="name">Technical Skills</span></a></li>
+                <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a title="Education" href="#education" itemprop="url"><span itemprop="name">Education</span></a></li>
+                <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a title="Interests" href="#interests" itemprop="url"><span itemprop="name">Interests</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="site-inner">
+        <div class="content-sidebar-wrap">
+            <main class="content" role="main" itemprop="mainContentOfPage">
+                <article class="page type-page status-publish entry page-about" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                    <header class="entry-header"><h2 class="entry-title" itemprop="headline"><a id="about_me">About Me</a></h2>
+                    </header>
+                    <p>A Google certified Data Analyst who is given to the ecstasy of the data revolution.  I focus on asking the right questions,
+                         finding answers with the aid of spreadsheets, queries, scripts and notebooks, and sharing my findings in clear, compelling, and convincing ways.</p>
+                </article>
+                <article class="page type-page status-publish entry page-experience" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                    <header class="entry-header">
+                        <h2 class="entry-title" itemprop="headline"><a id="experience">Experience</a></h2>
+                    </header>
+                    <div class="entry-content" itemprop="text">
+                        <h3 class="main-info">Data Analyst</h3>
+                        <h3 class="extra-info"><span><a href="https://www.solinagroup.com/">Solina Centre for International
+                            Development and Research</a> • 2020-2021</span></h3> 
+                        
+                        <hr>
+
+                        <h3 class="main-info">Intern • Facilities Engineer</h3>
+                        <h3 class="extra-info"><span><a href="https://www.chevron.com/worldwide/nigeria/">Chevron Nigeria Limited</a> • 2018-2019</span></h3>
+                        
+                        <hr>
+                        <h3 class="main-info">Intern • Producution Engineer</h3>
+                        <h3 class="extra-info"><span><a href="https://vitafoamng.com/">Vitafoam Nigeria Plc.</a> • 2018</span></h3>
+                    </div>
+                </article>
+
+                <article class="page type-page status-publish entry page-projects" itemscope="itemscope"
+                         itemtype="http://schema.org/CreativeWork">
+                    <header class="entry-header"><h2 class="entry-title" itemprop="headline"><a id="projects">Projects</a></h2>
+                    </header>
+                    <div class="entry-content" itemprop="text">
+                        <h3 class="main-info">Siting A Restaurant</h3>
+
+                        <h3 class="extra-info"><span><a href="https://github.com/Wolemercy/Restaurant_Location">Jupyter
+                        Notebook</a> • 2020</span></h3>
+
+                        <p>Found the best five(5) locations in Paris, France, for stakeholders to site a new Italian Restaurant.<br>
+                            <strong>Skills:</strong> Python, Foursquare API, Folium, Sci-kit Learn</p>
+
+                        <hr>
+
+                        <h3 class="main-info">Rainfall in Australia </h3>
+
+                        <h3 class="extra-info"><span><a href="https://github.com/Wolemercy/Rain-in-Australia">Jupyter
+                        Notebook</a> | <a href="https://www.kaggle.com/wolemercy/predicting-rainfall-in-australia">Kaggle</a> • 2021</span></h3>
+
+                        <p>Built a Random Forest Classifier model to predict rainfall in Australia using climate data spanning a period of 10 years.<br>
+                            <strong>Skills:</strong> Python, Matplotlib, Sci-Kit Learn</p>
+
+                        <hr>
+                        
+                        <h3 class="main-info">Blog App</h3>
+
+                        <h3 class="extra-info"><span><a href="https://myfirstsuperdjangoapp.herokuapp.com/">Heroku</a> • 2021</span></h3>
+
+                        <p>Built a fully functional blog application, implemented AWS S3 storage system, SSL encryption, and deployed it on Heroku.<br>
+                            <strong>Skills:</strong> Django, Python, HTML, CSS, Linux, AWS</p>
+
+                        <hr>
+
+                        <h3 class="main-info">Personal Website </h3>
+
+                        <h3 class="extra-info"><span><a href="https://wolemercy.com/">Wolemercy</a> • 2021</span></h3>
+
+                        <p>Built a static website to display my portfolio.<br>
+                            <strong>Skills:</strong> Django, Python, HTML, CSS, Linux</p>
+                
+                </article>
+                <article class="page type-page status-publish entry page-skills" itemscope="itemscope"
+                         itemtype="http://schema.org/CreativeWork">
+                    <header class="entry-header"><h2 class="entry-title" itemprop="headline"><a id="skills">Technical Skills</a></h2>
+                    </header>
+                    <div class="entry-content" itemprop="text">
+                        <h3>Languages:</h3>
+                        <ul class="columns-2">
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                            <li>HTML / CSS</li>
+                        </ul>
+                        <h3>Tools, Frameworks, and Libraries:</h3>
+                        <ul class="columns-2">
+                            <li>Sci-kit Learn</li>
+                            <li>Django</li>
+                            <li>Tableau</li>
+                            <li>Git and GitHub</li>
+                            <li>Spreadsheets</li>
+                        </ul>
+                        <h3>Software:</h3>
+                        <ul class="columns-2">
+                            <li>Linux</li>
+                            <li>Windows</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                </article>
+            </main>
+            <aside class="sidebar sidebar-primary widget-area" role="complementary" itemscope="itemscope"
+                   itemtype="http://schema.org/WPSideBar">
+                <section id="text-2" class="widget widget-education widget_text">
+                    <div class="widget-wrap"><h2 class="widget-title widgettitle"><a id="education">Education</a></h2>
+                        <div class="textwidget">
+                            <h3 class="main-info">Coursera | Google</h3>
+
+                            <h3 class="extra-info"><a href="https://www.coursera.org/account/accomplishments/professional-cert/VJVDCAK2TYVV/">Google 
+                                Data Analytics </a> • 2021</h3>
+                            
+                                <p>Achieved competency in Python, R, SQL, and Tableau for data cleaning, analysis, and visualization.</p>
+
+                            <hr>
+
+                            <h3 class="main-info">Coursera | IBM</h3>
+
+                            <h3 class="extra-info"><a href="https://www.coursera.org/account/accomplishments/professional-cert/AUFEPJP8KP22/">IBM 
+                                Data Science </a> • 2020</h3>
+                            
+                                <p>Built machine learning models and gained familiarity with Python and SQL for data visualization and analysis. </p>
+
+                            <hr>
+
+                            <h3 class="main-info">University of Lagos</h3>
+
+                            <h3 class="extra-info"><a href="#">Faculty of 
+                                Engineering</a> • 2014-2019</h3>
+
+                            <p><strong>Bachelor of Science</strong> in Chemical Engineering.</p>
+
+                            <p><strong>Honors:</strong> First Class</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="text-2" class="widget widget-activities widget_text">
+                    <div class="widget-wrap"><h2 class="widget-title widgettitle"><a id="interests">Interests</a></h2>
+                        <div class="textwidget">
+
+                            <h3 class="secondary-info">Writing</h3>
+
+                            <h3 class="extra-info">Contributor | <a href="https://ehikioya.com/forums/">Ehi Kioya Forums</a> • 2020</h3>
+
+                            <p>A community for dialogue around code and technology</p>
+                            <hr>
+
+                            <h3 class="extra-info">Contributor | <a href="https://unicun.com/">Unicun</a> • 2021</h3>
+
+                            <p>A repertoire of geeky tech gadgets, brilliant inventions, and unconventional products.</p>
+                            <hr>
+                            
+                            <h3 class="secondary-info">Football</h3>
+
+                            <h3 class="extra-info">Host | <a href="https://www.listennotes.com/podcasts/the-smart-podcast/the-smart-football-podcast-WmxMFoeK1QL/">The 
+                                Smart Football Podcast</a> • 2020</h3>
+
+                            <p>A weekly discussion on the latest happenings in the footballing world with particular emphasis on the Top 5 European Leagues.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="text-2" class="widget widget-contact widget_text">
+                    <div class="widget-wrap"><h2 class="widget-title widgettitle"><a id="contact_me">Contact</a></h2>
+                        <div class="textwidget">
+                            
+                            <p><strong>Email: </strong><a href="mailto:wolemercy@gmail.com">wolemercy@gmail.com</a></p>
+
+                            <hr>
+
+                            <p><strong>Phone: </strong>+234 (0) 703 291 9835</p>
+
+                            <hr>
+
+                            <a href="https://drive.google.com/file/d/16tePGX6v0EsK9yg0ni00yyFTzyN2hGFU/view?usp=sharing">View Resume (PDF)</a>
+
+                        </div>
+                    </div>
+                </section>
+                
+        </div>
+    </div>
+    <footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="wrap">
+            <p>©&nbsp;2021 · <a href="https://wolemercy.com">Wolemercy</a> · Oluwole Ajewole</p>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
