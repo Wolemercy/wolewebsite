@@ -13,9 +13,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import json
+from decouple import config
 
-with open('/etc/wolewebsite-config.json') as config_file:
-	config = json.load(config_file)
+#with open('/etc/wolewebsite-config.json') as config_file:
+#	config = json.load(config_file)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config['SECRET_KEY']
+SECRET_KEY = config('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config('DJANGO_DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['85.159.208.158', 'www.wolemercy.com', 'https://www.wolemercy.com', 'wolemercy.com', 'http://www.wolemercy.com']
+ALLOWED_HOSTS = ['85.159.208.158', 'www.wolemercy.com', 'https://www.wolemercy.com', 'https://wolemercy.com', 'wolemercy.com', 'http://www.wolemercy.com', 'http://wolemercy.com']
 
 
 # Application definition
