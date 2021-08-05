@@ -31,7 +31,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DJANGO_DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['85.159.208.158', 'www.wolemercy.com', 'https://www.wolemercy.com', 'https://wolemercy.com', 'wolemercy.com', 'http://www.wolemercy.com', 'http://wolemercy.com']
+ALLOWED_HOSTS = ['85.159.208.158', 'www.wolemercy.com', 'https://www.wolemercy.com', 'https://wolemercy.com', 'wolemercy.com', 'http://www.wolemercy.com', 'http://wolemercy.com', '127.0.0.1']
 
 
 # Application definition
